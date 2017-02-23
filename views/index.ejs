@@ -1,6 +1,9 @@
 <% include header %>
 <% if (entries.length) { %>
 <% entries.forEach(function(entry) { %>
+<% console.log("Displaying:"+entry.title)%>
+<% console.log("Displaying:"+entry.content)%>
+<% console.log("Displaying:"+entry.published)%>
 <div class="panel panel-default">
 <div class="panel-heading">
 <div class="text-muted pull-right">
@@ -11,6 +14,7 @@
 <div class="panel-body">
 <%= entry.body %>
 </div>
+<%= entry.content%>
 </div>
 <% }) %>
 <% } else { %>
